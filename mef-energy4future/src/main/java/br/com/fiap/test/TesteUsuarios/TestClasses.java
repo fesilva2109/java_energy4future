@@ -16,7 +16,7 @@ public class TestClasses {
 
             // Teste 1: Testando o Cadastro de Usuário
             System.out.println("=== Testando Cadastro de Usuário ===");
-            UsuarioDto novoUsuario = new UsuarioDto(4, "usuario_teste@example.com", "senha123");
+            UsuarioDto novoUsuario = new UsuarioDto(3, "usuario_teste@example.com", "senha123");
 
             // Verificar se o usuário já existe
             UsuarioDto usuarioExistente = usuarioDao.buscarPorEmailSenha(novoUsuario.getEmail(), novoUsuario.getSenha());
